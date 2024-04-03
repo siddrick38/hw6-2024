@@ -16,7 +16,7 @@ document.querySelector("#play").addEventListener("click", function () {
   console.log("Play video");
 
   video.play();
-  volume.innerHTML = slider.value;
+  volume.innerHTML = slider.value + "%";
 });
 
 // pause button
@@ -68,7 +68,7 @@ document.querySelector("#mute").addEventListener("click", function () {
 // volume slider
 document.querySelector("#slider").addEventListener("change", function () {
   video.volume = slider.value / 100;
-  volume.innerHTML = slider.value;
+  volume.innerHTML = slider.value + "%";
   console.log("The current volume is", video.volume);
 });
 
